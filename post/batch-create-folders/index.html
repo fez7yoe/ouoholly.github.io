@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>批量新建文件夾 folder (.bat) | 我的倉庫 | ouoholly</title><meta name="description" content="批量新建文件夾 folder (.bat)"><meta name="keywords" content="command,bat"><meta name="author" content="ouoholly"><meta name="copyright" content="ouoholly"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="google-site-verification" content="w_ckdBWagWnR5fb_Q0uRvUrDL32IeViEICHiEsyqKWc"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="批量新建文件夾 folder (.bat)"><meta name="twitter:description" content="批量新建文件夾 folder (.bat)"><meta name="twitter:image" content="https://ouoholly.github.io/img/banner-asteroids.jpg"><meta property="og:type" content="article"><meta property="og:title" content="批量新建文件夾 folder (.bat)"><meta property="og:url" content="https://ouoholly.github.io/post/batch-create-folders/"><meta property="og:site_name" content="我的倉庫 | ouoholly"><meta property="og:description" content="批量新建文件夾 folder (.bat)"><meta property="og:image" content="https://ouoholly.github.io/img/banner-asteroids.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="https://ouoholly.github.io/post/batch-create-folders/"><link rel="prev" title="Brackets 那些好用的外掛 及 快捷鍵" href="https://ouoholly.github.io/post/adobe-brackets-extensions/"><link rel="next" title="批量重新命名文件 (.bat)" href="https://ouoholly.github.io/post/batch-rename-files/"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-158263809-1', 'auto');
+ga('send', 'pageview');
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查詢的內容:${query}"}},
+  translate: {"defaultEncoding":1,"translateDelay":0,"cookieDomain":"https://ouoholly.github.io/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '鍵將本頁加入書籤'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: {"languages":{"author":"作者: ouoholly","link":"鏈接: https://ouoholly.github.io/post/batch-create-folders/","source":"來源: 我的倉庫 | ouoholly","info":"著作權歸作者所有。商業轉載請聯繫作者獲得授權。非商業轉載請註明出處。"}},
+  ClickShowText: {"text":"✦","fontSize":"15px"},
+  medium_zoom: false,
+  fancybox: false,
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"按","message_next":"鍵將本頁加入書籤"},"chs_to_cht":"你已切換為繁體","cht_to_chs":"你已切換為簡體","day_to_night":"你已切換為深色模式","night_to_day":"你已切換為淺色模式","bgLight":"#ffc621","bgDark":"#2d3035","position":"bottom-center"},
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="我的倉庫 | ouoholly" type="application/atom+xml">
+</head><body><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">我的倉庫 | ouoholly</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 歸檔</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 標籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分類</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-user-plus"></i><span> 逛逛</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-external-link" aria-hidden="true"></i><span> 工具箱</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://ouoholly.github.io/toolpara/"><i class="fa-fw fa fa-font"></i><span> 繁簡排版</span></a></li><li><a class="site-page" href="https://ouoholly.github.io/mybookmark/"><i class="fa-fw fa fa-bookmark"></i><span> 我的書籤</span></a></li></ul></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">17</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">標籤</div><div class="length_num">15</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分類</div><div class="length_num">5</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 歸檔</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 標籤</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分類</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-user-plus"></i><span> 逛逛</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-coffee"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-external-link" aria-hidden="true"></i><span> 工具箱</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="https://ouoholly.github.io/toolpara/"><i class="fa-fw fa fa-font"></i><span> 繁簡排版</span></a></li><li><a class="site-page" href="https://ouoholly.github.io/mybookmark/"><i class="fa-fw fa fa-bookmark"></i><span> 我的書籤</span></a></li></ul></div></div></div></div><div id="body-wrap"><main id="content-outer"><div id="top-container" style="background-image: url(/img/banner-asteroids.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">批量新建文件夾 folder (.bat)</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2020-03-09</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E8%BE%A6%E5%85%AC%E5%B0%8F%E6%8A%80%E5%B7%A7/">辦公小技巧</a></span><div class="post-meta-wordcount"><i class="fa fa-file-word-o post-meta__icon fa-fw" aria-hidden="true"></i><span>字數總計:</span><span class="word-count">55</span><span class="post-meta__separator">|</span><i class="fa fa-clock-o post-meta__icon fa-fw" aria-hidden="true"></i><span>閲讀時長: 1 分鐘</span><div class="post-meta-pv-cv"><span class="post-meta__separator">|</span><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>閲讀量:</span><span id="busuanzi_value_page_pv"></span><span class="post-meta__separator">|</span><i class="fa fa-comment-o post-meta__icon fa-fw" aria-hidden="true"></i><span>評論數:</span><a href="/post/batch-create-folders/#post-comment"><span class="disqus-comment-count" data-disqus-url="https://ouoholly.github.io/post/batch-create-folders/"></span></a></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/command/">command    </a><a class="post-meta__tags" href="/tags/bat/">bat    </a></div></div><article id="post"><div class="article-container" id="post-content"><h1 id="利用-bat-檔，批量重新命名文件。"><a href="#利用-bat-檔，批量重新命名文件。" class="headerlink" title="利用 bat 檔，批量重新命名文件。"></a>利用 bat 檔，批量重新命名文件。</h1><p>格式：</p>
+<div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">bat</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight bat"><table><tr><td class="code"><pre><span class="line"><span class="built_in">md</span> foldername</span><br></pre></td></tr></table></figure></div>
+
+<hr>
+<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><h2 id="1-在想要批量新建文件夾的-folder-內，創建一個-bat-檔。"><a href="#1-在想要批量新建文件夾的-folder-內，創建一個-bat-檔。" class="headerlink" title="1. 在想要批量新建文件夾的 folder 內，創建一個 bat 檔。"></a>1. 在想要批量新建文件夾的 folder 內，創建一個 bat 檔。</h2><p>例，內容如下：</p>
+<div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">bat</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight bat"><table><tr><td class="code"><pre><span class="line"><span class="built_in">md</span>	hello</span><br><span class="line"><span class="built_in">md</span>	hi</span><br><span class="line"><span class="built_in">md</span>	test</span><br><span class="line"><span class="built_in">md</span>	ddd</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="2-Double-click-bat檔。完成。"><a href="#2-Double-click-bat檔。完成。" class="headerlink" title="2. Double click bat檔。完成。"></a>2. Double click bat檔。完成。</h2><p><img alt="batch-create-folders" data-src="https://i.imgur.com/bWPy7mA.png" src="/img/loading.gif" class="lazyload"></p>
+<hr>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">ouoholly </a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章鏈接: </span><span class="post-copyright-info"><a href="https://ouoholly.github.io/post/batch-create-folders/">https://ouoholly.github.io/post/batch-create-folders/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版權聲明: </span><span class="post-copyright-info">本博客所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 許可協議。歡迎「部份引用」與介紹（未經許可<b><u>請勿</u>全文轉貼</b>本站文章），轉載引用請註明來源 <a href="https://ouoholly.github.io" target="_blank">ouoholly 的倉庫</a>，謝謝！</span></div></div><div class="tag_share"> <div class="post_share"><div class="addtoany"><div class="a2a_kit a2a_kit_size_24 a2a_default_style"><a class="a2a_button_copy_link"></a><a class="a2a_button_print"></a><a class="a2a_button_facebook"></a><a class="a2a_button_twitter"></a><a class="a2a_button_plurk"></a><a class="a2a_button_telegram"></a><a class="a2a_button_whatsapp"></a><a class="a2a_button_line"></a><a class="a2a_button_facebook_messenger"></a><a class="a2a_button_sina_weibo"></a><a class="a2a_button_wechat"></a><a class="a2a_button_pocket"></a><a class="a2a_button_blogger"></a><a class="a2a_button_evernote"></a><a class="a2a_dd" href="https://www.addtoany.com/share" target="_blank" rel="noopener"></a></div></div><script async src="https://static.addtoany.com/menu/page.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/post/adobe-brackets-extensions/"><img class="prev_cover lazyload" data-src="/img/banner-asteroids.jpg" onerror="onerror=null;src='/img/max-chen-lud4OaUCP4Q-unsplash.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>Brackets 那些好用的外掛 及 快捷鍵</span></div></a></div><div class="next-post pull_right"><a href="/post/batch-rename-files/"><img class="next_cover lazyload" data-src="/img/banner-asteroids.jpg" onerror="onerror=null;src='/img/max-chen-lud4OaUCP4Q-unsplash.jpg'"><div class="label">下一篇</div><div class="next_info"><span>批量重新命名文件 (.bat)</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相關推薦</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/post/batch-rename-files/" title="批量重新命名文件 (.bat)"><img class="relatedPosts_cover lazyload"data-src="/img/banner-asteroids.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2020-03-08</div><div class="relatedPosts_title">批量重新命名文件 (.bat)</div></div></a></div><div class="relatedPosts_item"><a href="/post/command-folder-directory-tree-structure/" title="【CMD】tree command 文件夾樹狀結構，導出目錄樹至txt檔"><img class="relatedPosts_cover lazyload"data-src="/img/banner-asteroids.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2020-02-15</div><div class="relatedPosts_title">【CMD】tree command 文件夾樹狀結構，導出目錄樹至txt檔</div></div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 評論</span></div><div id="disqus_thread"></div><script>var disqus_config = function () {
+  this.page.url = 'https://ouoholly.github.io/post/batch-create-folders/';
+  this.page.identifier = '/post/batch-create-folders/';
+};
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://ouoholly-blog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();</script></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By ouoholly</div><div class="framework-info"><span>Power by </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">Banner Image from <a href="http://thepatternlibrary.com/#asteroids" target="_blank">Pattern Library</a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-plus" id="font_plus" title="放大字體"></i><i class="fa fa-minus" id="font_minus" title="縮小字體"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="簡繁轉換" target="_self">簡</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜間模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="設置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直達評論"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-arrow-up" id="go-up" title="回到頂部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/calendar.js"></script><script src="/js/languages.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="http://0xabcdef.com/activate-power-mode/dist/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false; 
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/ClickShowText.js"></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>

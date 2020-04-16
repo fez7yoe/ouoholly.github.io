@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>我的倉庫 | ouoholly</title>
+  <icon>https://ouoholly.github.io/icon.png</icon>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://ouoholly.github.io/"/>
+  <updated>2020-04-14T03:12:02.159Z</updated>
+  <id>https://ouoholly.github.io/</id>
+  
+  <author>
+    <name>ouoholly</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【筆記】正則表達式 Regular expression (Regex)</title>
+    <link href="https://ouoholly.github.io/post/note-regular-expression-regex/"/>
+    <id>https://ouoholly.github.io/post/note-regular-expression-regex/</id>
+    <published>2020-04-13T16:13:00.000Z</published>
+    <updated>2020-04-14T03:12:02.159Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;解釋&quot;&gt;&lt;a href=&quot;#解釋&quot; class=&quot;headerlink&quot; title=&quot;解釋&quot;&gt;&lt;/a&gt;解釋&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Regex&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;+&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&amp;gt;= 1 —
+        
+      
+    
+    </summary>
+    
+    
+      <category term="筆記" scheme="https://ouoholly.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+      <category term="regex" scheme="https://ouoholly.github.io/tags/regex/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Illustrator 轉存 artboard size jpg (300 dpi)</title>
+    <link href="https://ouoholly.github.io/post/ai-export-300dpi-image/"/>
+    <id>https://ouoholly.github.io/post/ai-export-300dpi-image/</id>
+    <published>2020-04-05T12:59:00.000Z</published>
+    <updated>2020-04-05T13:27:06.978Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;方法&quot;&gt;&lt;a href=&quot;#方法&quot; class=&quot;headerlink&quot; title=&quot;方法&quot;&gt;&lt;/a&gt;方法&lt;/h1&gt;&lt;p&gt;例如，要轉存一個 50px*50px 300 dpi 的 jpg。&lt;/p&gt;
+&lt;h2 id=&quot;1-Illustrator&quot;&gt;&lt;a href=&quot;#1-Illustrator&quot; class=&quot;headerlink&quot; title=&quot;1. Illustrator&quot;&gt;&lt;/a&gt;1. Illustrator&lt;/h2&gt;&lt;p&gt;「檔案 (File)」→「轉存
+        
+      
+    
+    </summary>
+    
+    
+      <category term="筆記" scheme="https://ouoholly.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+      <category term="AI, Illustrator" scheme="https://ouoholly.github.io/tags/AI-Illustrator/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Brackets 那些好用的外掛 及 快捷鍵</title>
+    <link href="https://ouoholly.github.io/post/adobe-brackets-extensions/"/>
+    <id>https://ouoholly.github.io/post/adobe-brackets-extensions/</id>
+    <published>2020-03-18T10:45:00.000Z</published>
+    <updated>2020-03-18T10:45:16.442Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;介紹一下我一直使用的 Adobe Brackets 編輯器，在 Windows 和 Mac 都可以免費使用。&lt;br&gt;最主要是因為 Brackets 的 Live Preview 功能太棒了，不用先儲存一遍，直接可以一邊編輯一邊即時看修改效果，&lt;br&gt;而且有很多好用的外掛和快捷鍵，&lt;br&gt;所以試過多個編輯器後，還是選擇用 Brackets
+        
+      
+    
+    </summary>
+    
+    
+      <category term="筆記" scheme="https://ouoholly.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>批量新建文件夾 folder (.bat)</title>
+    <link href="https://ouoholly.github.io/post/batch-create-folders/"/>
+    <id>https://ouoholly.github.io/post/batch-create-folders/</id>
+    <published>2020-03-09T07:17:00.000Z</published>
+    <updated>2020-03-18T10:47:35.386Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;利用-bat-檔，批量重新命名文件。&quot;&gt;&lt;a href=&quot;#利用-bat-檔，批量重新命名文件。&quot; class=&quot;headerlink&quot; title=&quot;利用 bat 檔，批量重新命名文件。&quot;&gt;&lt;/a&gt;利用 bat 檔，批量重新命名文件。&lt;/h1&gt;&lt;p&gt;格式：&lt;/p&gt;
+&lt;div class=&quot;code-area-wrap&quot;&gt;&lt;div class=&quot;highlight-tools&quot;&gt;&lt;i class=&quot;fa fa-angle-down code-expand&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="辦公小技巧" scheme="https://ouoholly.github.io/categories/%E8%BE%A6%E5%85%AC%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="command" scheme="https://ouoholly.github.io/tags/command/"/>
+    
+      <category term="bat" scheme="https://ouoholly.github.io/tags/bat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>批量重新命名文件 (.bat)</title>
+    <link href="https://ouoholly.github.io/post/batch-rename-files/"/>
+    <id>https://ouoholly.github.io/post/batch-rename-files/</id>
+    <published>2020-03-08T07:17:00.000Z</published>
+    <updated>2020-03-18T10:47:18.825Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;利用-bat-檔，批量重新命名文件。&quot;&gt;&lt;a href=&quot;#利用-bat-檔，批量重新命名文件。&quot; class=&quot;headerlink&quot; title=&quot;利用 bat 檔，批量重新命名文件。&quot;&gt;&lt;/a&gt;利用 bat 檔，批量重新命名文件。&lt;/h1&gt;&lt;p&gt;格式：&lt;/p&gt;
+&lt;div class=&quot;code-area-wrap&quot;&gt;&lt;div class=&quot;highlight-tools&quot;&gt;&lt;i class=&quot;fa fa-angle-down code-expand&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="辦公小技巧" scheme="https://ouoholly.github.io/categories/%E8%BE%A6%E5%85%AC%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="command" scheme="https://ouoholly.github.io/tags/command/"/>
+    
+      <category term="bat" scheme="https://ouoholly.github.io/tags/bat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 iPhone / iPad 預覽本地 HTML 檔</title>
+    <link href="https://ouoholly.github.io/post/view-local-html-file-on-iphone-ipad/"/>
+    <id>https://ouoholly.github.io/post/view-local-html-file-on-iphone-ipad/</id>
+    <published>2020-03-05T10:02:00.000Z</published>
+    <updated>2020-03-05T07:02:13.917Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;雖然用電腦在瀏覽器按 &lt;code&gt;F12&lt;/code&gt; &amp;amp; &lt;code&gt;Ctrl&lt;/code&gt; &lt;code&gt;Shift&lt;/code&gt; &lt;code&gt;M&lt;/code&gt; 可以測試不同螢幕大小和在不同機型上的效果。&lt;br&gt;但當真正到了使用 iPhone / iPad
+        
+      
+    
+    </summary>
+    
+    
+      <category term="寫網頁" scheme="https://ouoholly.github.io/categories/%E5%AF%AB%E7%B6%B2%E9%A0%81/"/>
+    
+    
+      <category term="html" scheme="https://ouoholly.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo Butterfly 主題：添加文章日曆插件</title>
+    <link href="https://ouoholly.github.io/post/butterfly-add-hexo-generator-calendar/"/>
+    <id>https://ouoholly.github.io/post/butterfly-add-hexo-generator-calendar/</id>
+    <published>2020-02-28T10:05:00.000Z</published>
+    <updated>2020-03-18T04:48:33.162Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;成功在 Hexo Butterfly 主題的側欄添加文章日曆了！ &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;感謝這位 HCLonely 大大的教學文檔!&lt;/strong&gt; &lt;img alt=&quot;表符-比心&quot; data-src=&quot;https://emos.plurk.com/067d3ef4b9bccca895784802f000cfa6_w20_h20.gif&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="架站記錄" scheme="https://ouoholly.github.io/categories/%E6%9E%B6%E7%AB%99%E8%A8%98%E9%8C%84/"/>
+    
+    
+      <category term="Hexo" scheme="https://ouoholly.github.io/tags/Hexo/"/>
+    
+      <category term="Hexo-Theme-Butterfly" scheme="https://ouoholly.github.io/tags/Hexo-Theme-Butterfly/"/>
+    
+      <category term="架站" scheme="https://ouoholly.github.io/tags/%E6%9E%B6%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>抓取 Google Excel data 至 json format，並用 html 顯示在網頁</title>
+    <link href="https://ouoholly.github.io/post/google-spreadsheet-data-to-json-javascript-html/"/>
+    <id>https://ouoholly.github.io/post/google-spreadsheet-data-to-json-javascript-html/</id>
+    <published>2020-02-26T14:00:00.000Z</published>
+    <updated>2020-03-05T06:32:36.547Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;步驟&quot;&gt;&lt;a href=&quot;#步驟&quot; class=&quot;headerlink&quot; title=&quot;步驟&quot;&gt;&lt;/a&gt;步驟&lt;/h1&gt;&lt;h2 id=&quot;1-data-→-Google-Excel&quot;&gt;&lt;a href=&quot;#1-data-→-Google-Excel&quot; class=&quot;headerlink&quot; title=&quot;1. data → Google Excel&quot;&gt;&lt;/a&gt;1. data → Google Excel&lt;/h2&gt;&lt;p&gt;把 data 輸入至 Google
+        
+      
+    
+    </summary>
+    
+    
+      <category term="寫網頁" scheme="https://ouoholly.github.io/categories/%E5%AF%AB%E7%B6%B2%E9%A0%81/"/>
+    
+    
+      <category term="Google-Excel" scheme="https://ouoholly.github.io/tags/Google-Excel/"/>
+    
+      <category term="json" scheme="https://ouoholly.github.io/tags/json/"/>
+    
+      <category term="javascript" scheme="https://ouoholly.github.io/tags/javascript/"/>
+    
+      <category term="html" scheme="https://ouoholly.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Terminal Command Line / CMD / Linux 常用指令</title>
+    <link href="https://ouoholly.github.io/post/cmd-terminal-command/"/>
+    <id>https://ouoholly.github.io/post/cmd-terminal-command/</id>
+    <published>2020-02-25T14:00:00.000Z</published>
+    <updated>2020-02-28T06:52:51.386Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;clear&quot;&gt;&lt;a href=&quot;#clear&quot; class=&quot;headerlink&quot; title=&quot;clear&quot;&gt;&lt;/a&gt;clear&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;L&lt;/code&gt; OR &lt;code&gt;clear&lt;/code&gt; clear the terminal screen&lt;/p&gt;
+&lt;h1 id=&quot;tab&quot;&gt;&lt;a href=&quot;#tab&quot; class=&quot;headerlink&quot; title=&quot;tab&quot;&gt;&lt;/a&gt;tab&lt;/h1&gt;&lt;p&gt;click
+        
+      
+    
+    </summary>
+    
+    
+      <category term="筆記" scheme="https://ouoholly.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+      <category term="筆記" scheme="https://ouoholly.github.io/tags/%E7%AD%86%E8%A8%98/"/>
+    
+      <category term="CMD-command" scheme="https://ouoholly.github.io/tags/CMD-command/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown 常用語法</title>
+    <link href="https://ouoholly.github.io/post/markdown-notes/"/>
+    <id>https://ouoholly.github.io/post/markdown-notes/</id>
+    <published>2020-02-17T13:00:00.000Z</published>
+    <updated>2020-04-13T16:43:35.466Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;hr&gt;
+&lt;h1 id=&quot;標題-6-levels&quot;&gt;&lt;a href=&quot;#標題-6-levels&quot; class=&quot;headerlink&quot; title=&quot;標題 (6 levels)&quot;&gt;&lt;/a&gt;標題 (6 levels)&lt;/h1&gt;&lt;p&gt;&lt;code&gt;#&lt;/code&gt; 號、空格&lt;/p&gt;
+&lt;div class=&quot;code-area-wrap&quot;&gt;&lt;div class=&quot;highlight-tools&quot;&gt;&lt;i class=&quot;fa fa-angle-down code-expand&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="筆記" scheme="https://ouoholly.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+      <category term="markdown" scheme="https://ouoholly.github.io/tags/markdown/"/>
+    
+  </entry>
+  
+</feed>
