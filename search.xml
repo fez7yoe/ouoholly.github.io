@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>【個人用途記錄】Python 爬蟲 - Beautiful Soup 抓取及解析 HTML 網頁資料</title>
+      <link href="/post/python-web-crawl-shhh/"/>
+      <url>/post/python-web-crawl-shhh/</url>
+      
+        <content type="html"><![CDATA[<hr><p>記錄一下最近的個人用法。<br>刷得太快追趕不上，而且用手機追看吃噗太嚴重了 <img alt="表符-心累" data-src="https://emos.plurk.com/5533147d2b0d0d278c7e880d0a1242bf_w20_h20.gif" src="/img/loading.svg" class="lazyload"><br>決定用電腦一次過爬了後，再放進word檔導進手機慢慢追看。</p><h1 id="做法"><a href="#做法" class="headerlink" title="做法"></a>做法</h1><p>把整個網頁另存新檔 (html) 來爬。</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">"C:/Users/ouoholly/Desktop/data.html"</span>, encoding=<span class="string">"utf-8"</span>) <span class="keyword">as</span> f:</span><br><span class="line">    soup = BeautifulSoup(f)</span><br><span class="line"></span><br><span class="line">    stories = soup.find_all(<span class="string">'div'</span>, &#123;<span class="string">"class"</span>: [<span class="string">"user"</span>, <span class="string">"content"</span>]&#125;)</span><br><span class="line">    <span class="keyword">for</span> s <span class="keyword">in</span> stories:</span><br><span class="line">        print(s.text + <span class="string">"\n"</span>)</span><br></pre></td></tr></table></figure></div><h1 id="進階一（add-粗體樣式）"><a href="#進階一（add-粗體樣式）" class="headerlink" title="進階一（add 粗體樣式）"></a>進階一（add 粗體樣式）</h1><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">"C:/Users/ouoholly/Desktop/data.html"</span>, encoding=<span class="string">"utf-8"</span>) <span class="keyword">as</span> f:</span><br><span class="line">    soup = BeautifulSoup(f)</span><br><span class="line">    </span><br><span class="line">    u = soup.find_all(<span class="string">'div'</span>, class_=<span class="string">"user"</span>)</span><br><span class="line">    c = soup.find_all(<span class="string">'div'</span>, class_=<span class="string">"content"</span>)</span><br><span class="line">    <span class="keyword">for</span> (uu, cc) <span class="keyword">in</span> zip(u, c):</span><br><span class="line">        print(<span class="string">"\033[1m"</span> + uu.text + <span class="string">"\033[0m"</span> + <span class="string">"\n"</span> + cc.text + <span class="string">"\n"</span>)</span><br></pre></td></tr></table></figure></div><p><strong>解釋：</strong><br><code>\033[1m</code> start bold<br><code>\033[0m</code> end bold</p><h1 id="進階二（add-顏色樣式）"><a href="#進階二（add-顏色樣式）" class="headerlink" title="進階二（add 顏色樣式）"></a>進階二（add 顏色樣式）</h1><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">"C:/Users/ouoholly/Desktop/data.html"</span>, encoding=<span class="string">"utf-8"</span>) <span class="keyword">as</span> f:</span><br><span class="line">    soup = BeautifulSoup(f)</span><br><span class="line">    </span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">color</span>:</span></span><br><span class="line">        PURPLE = <span class="string">'\033[95m'</span></span><br><span class="line">        BOLD = <span class="string">'\033[1m'</span></span><br><span class="line">        END = <span class="string">'\033[0m'</span></span><br><span class="line">    </span><br><span class="line">    u = soup.find_all(<span class="string">'div'</span>, class_=<span class="string">"user"</span>)</span><br><span class="line">    c = soup.find_all(<span class="string">'div'</span>, class_=<span class="string">"content"</span>)</span><br><span class="line">    <span class="keyword">for</span> (uu, cc) <span class="keyword">in</span> zip(u, c):</span><br><span class="line">        print(color.PURPLE + color.BOLD + uu.text + color.END + <span class="string">"\n"</span> + cc.text + <span class="string">"\n"</span>)</span><br></pre></td></tr></table></figure></div><h1 id="複製-output-內容"><a href="#複製-output-內容" class="headerlink" title="複製 output 內容"></a>複製 output 內容</h1><p>最簡單的複製粘貼</p><ol><li>select all: <code>Ctrl</code> + <code>Shift</code> + <code>End</code></li><li>copy: <code>Ctrl</code> + <code>C</code></li><li>paste: <code>Ctrl</code> + <code>V</code> to MS Word (可保留顏色粗體格式)</li></ol><hr><h1 id="教學資源"><a href="#教學資源" class="headerlink" title="教學資源"></a>教學資源</h1><p>特別推薦這篇，解釋得十分清楚易懂，而且還舉出了很多例子，每個都清晰地列出它們的 input &amp; output，十分適合新手理解跟著做。<img alt="表符-比心" data-src="https://emos.plurk.com/067d3ef4b9bccca895784802f000cfa6_w20_h20.gif" src="/img/loading.svg" class="lazyload"></p><blockquote><p><a href="https://blog.gtwang.org/programming/python-beautiful-soup-module-scrape-web-pages-tutorial/" target="_blank" rel="noopener">Python 使用 Beautiful Soup 抓取與解析網頁資料，開發網路爬蟲教學 - G. T. Wang</a></p></blockquote><hr><h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul><li><a href="https://blog.gtwang.org/programming/python-beautiful-soup-module-scrape-web-pages-tutorial/" target="_blank" rel="noopener">Python 使用 Beautiful Soup 抓取與解析網頁資料，開發網路爬蟲教學 - G. T. Wang</a></li><li><a href="http://zetcode.com/python/beautifulsoup/" target="_blank" rel="noopener">Python BeautifulSoup tutorial - parse HTML, XML documents in Python</a></li><li><a href="https://www.geeksforgeeks.org/python-iterate-multiple-lists-simultaneously/" target="_blank" rel="noopener">Python Iterate over multiple lists simultaneously - GeeksforGeeks</a></li><li><a href="https://www.datacamp.com/community/tutorials/scraping-reddit-python-scrapy?utm_source=adwords_ppc&utm_campaignid=9942305733&utm_adgroupid=100189364546&utm_device=c&utm_keyword=&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=229765585183&utm_targetid=dsa-929501846124&utm_loc_interest_ms=&utm_loc_physical_ms=9069537&gclid=EAIaIQobChMIlOK-7eCr6QIVSsEWBR1scwYkEAAYASAAEgKrwvD_BwE" target="_blank" rel="noopener">Scraping Reddit with Python and BeautifulSoup 4 - DataCamp</a></li><li><a href="https://stackoverflow.com/questions/8924173/how-do-i-print-bold-text-in-python" target="_blank" rel="noopener">How do I print bold text in Python? - Stack Overflow</a></li><li><a href="https://www.youtube.com/watch?v=C4OkV6DrVRs" target="_blank" rel="noopener">Python 文字檔案的讀取和儲存 By 彭彭 - YouTube</a></li><li><a href="https://ithelp.ithome.com.tw/articles/10161708" target="_blank" rel="noopener">Python初學起步走-Day29 - 檔案讀寫 - iT 邦幫忙</a></li></ul><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 筆記 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> 爬蟲 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【筆記】正則表達式 Regular expression (Regex)</title>
       <link href="/post/note-regular-expression-regex/"/>
       <url>/post/note-regular-expression-regex/</url>
@@ -170,9 +197,9 @@
             
             <tag> Hexo </tag>
             
-            <tag> Hexo-Theme-Butterfly </tag>
-            
             <tag> 架站 </tag>
+            
+            <tag> Hexo-Theme-Butterfly </tag>
             
         </tags>
       
@@ -431,9 +458,9 @@
             
             <tag> 筆記 </tag>
             
-            <tag> Hexo-Theme-Butterfly </tag>
-            
             <tag> 架站 </tag>
+            
+            <tag> Hexo-Theme-Butterfly </tag>
             
         </tags>
       
@@ -464,9 +491,9 @@
             
             <tag> 筆記 </tag>
             
-            <tag> Hexo-Theme-Butterfly </tag>
-            
             <tag> 架站 </tag>
+            
+            <tag> Hexo-Theme-Butterfly </tag>
             
         </tags>
       

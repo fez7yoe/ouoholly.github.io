@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ouoholly.github.io/"/>
-  <updated>2020-04-14T03:12:02.159Z</updated>
+  <updated>2020-05-11T14:34:40.171Z</updated>
   <id>https://ouoholly.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【個人用途記錄】Python 爬蟲 - Beautiful Soup 抓取及解析 HTML 網頁資料</title>
+    <link href="https://ouoholly.github.io/post/python-web-crawl-shhh/"/>
+    <id>https://ouoholly.github.io/post/python-web-crawl-shhh/</id>
+    <published>2020-05-11T14:15:00.000Z</published>
+    <updated>2020-05-11T14:34:40.171Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;hr&gt;
+&lt;p&gt;記錄一下最近的個人用法。&lt;br&gt;刷得太快追趕不上，而且用手機追看吃噗太嚴重了 &lt;img alt=&quot;表符-心累&quot; data-src=&quot;https://emos.plurk.com/5533147d2b0d0d278c7e880d0a1242bf_w20_h20.gif&quot; src=&quot;/img/loading.svg&quot; class=&quot;lazyload&quot;&gt;&lt;br&gt;決定用電腦一次過爬了後，再放進word檔導進手機慢慢追看。&lt;/p&gt;
+&lt;h1 id=&quot;做法&quot;&gt;&lt;a href=&quot;#做法&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="筆記" scheme="https://ouoholly.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+      <category term="python" scheme="https://ouoholly.github.io/tags/python/"/>
+    
+      <category term="爬蟲" scheme="https://ouoholly.github.io/tags/%E7%88%AC%E8%9F%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>【筆記】正則表達式 Regular expression (Regex)</title>
@@ -218,9 +249,9 @@
     
       <category term="Hexo" scheme="https://ouoholly.github.io/tags/Hexo/"/>
     
-      <category term="Hexo-Theme-Butterfly" scheme="https://ouoholly.github.io/tags/Hexo-Theme-Butterfly/"/>
-    
       <category term="架站" scheme="https://ouoholly.github.io/tags/%E6%9E%B6%E7%AB%99/"/>
+    
+      <category term="Hexo-Theme-Butterfly" scheme="https://ouoholly.github.io/tags/Hexo-Theme-Butterfly/"/>
     
   </entry>
   
@@ -284,35 +315,6 @@
       <category term="筆記" scheme="https://ouoholly.github.io/tags/%E7%AD%86%E8%A8%98/"/>
     
       <category term="CMD-command" scheme="https://ouoholly.github.io/tags/CMD-command/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Markdown 常用語法</title>
-    <link href="https://ouoholly.github.io/post/markdown-notes/"/>
-    <id>https://ouoholly.github.io/post/markdown-notes/</id>
-    <published>2020-02-17T13:00:00.000Z</published>
-    <updated>2020-04-13T16:43:35.466Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;hr&gt;
-&lt;h1 id=&quot;標題-6-levels&quot;&gt;&lt;a href=&quot;#標題-6-levels&quot; class=&quot;headerlink&quot; title=&quot;標題 (6 levels)&quot;&gt;&lt;/a&gt;標題 (6 levels)&lt;/h1&gt;&lt;p&gt;&lt;code&gt;#&lt;/code&gt; 號、空格&lt;/p&gt;
-&lt;div class=&quot;code-area-wrap&quot;&gt;&lt;div class=&quot;highlight-tools&quot;&gt;&lt;i class=&quot;fa fa-angle-down code-expand&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="筆記" scheme="https://ouoholly.github.io/categories/%E7%AD%86%E8%A8%98/"/>
-    
-    
-      <category term="markdown" scheme="https://ouoholly.github.io/tags/markdown/"/>
     
   </entry>
   
