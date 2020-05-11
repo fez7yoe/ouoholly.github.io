@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ouoholly.github.io/"/>
-  <updated>2020-05-11T14:34:40.171Z</updated>
+  <updated>2020-05-11T14:54:44.116Z</updated>
   <id>https://ouoholly.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>【個人用途記錄】Python 爬蟲 - Beautiful Soup 抓取及解析 HTML 網頁資料</title>
+    <title>【個人用途記錄】Python 爬蟲 - 抓取及解析 HTML 網頁資料</title>
     <link href="https://ouoholly.github.io/post/python-web-crawl-shhh/"/>
     <id>https://ouoholly.github.io/post/python-web-crawl-shhh/</id>
     <published>2020-05-11T14:15:00.000Z</published>
-    <updated>2020-05-11T14:34:40.171Z</updated>
+    <updated>2020-05-11T14:54:44.116Z</updated>
     
     <summary type="html">
     
@@ -249,9 +249,9 @@
     
       <category term="Hexo" scheme="https://ouoholly.github.io/tags/Hexo/"/>
     
-      <category term="架站" scheme="https://ouoholly.github.io/tags/%E6%9E%B6%E7%AB%99/"/>
-    
       <category term="Hexo-Theme-Butterfly" scheme="https://ouoholly.github.io/tags/Hexo-Theme-Butterfly/"/>
+    
+      <category term="架站" scheme="https://ouoholly.github.io/tags/%E6%9E%B6%E7%AB%99/"/>
     
   </entry>
   
