@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>令 Windows 10 視覺上更快更流暢，關閉動畫效果設定</title>
+      <link href="/post/win10-turnoff-animation-effect-setting/"/>
+      <url>/post/win10-turnoff-animation-effect-setting/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1-Go-to-Settings"><a href="#1-Go-to-Settings" class="headerlink" title="1. Go to Settings"></a>1. Go to Settings</h1><p>click <code>Ease of Access</code><br><img alt="step 1" data-src="https://i.imgur.com/uWIWj1Q.jpg" src="/img/loading.svg" class="lazyload"></p><h1 id="2-Inside-Display"><a href="#2-Inside-Display" class="headerlink" title="2. Inside Display"></a>2. Inside Display</h1><p>under “Simplify and personalise Windows”, turn off <code>Show Animation in Windows</code><br><img alt="step 2" data-src="https://i.imgur.com/nR8PaCJ.jpg" src="/img/loading.svg" class="lazyload"></p><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 筆記 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windows 10 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【個人用途記錄】Python 爬蟲 - 抓取及解析 HTML 網頁資料</title>
       <link href="/post/python-web-crawl-shhh/"/>
       <url>/post/python-web-crawl-shhh/</url>
@@ -456,9 +481,9 @@
             
             <tag> Hexo </tag>
             
-            <tag> 架站 </tag>
-            
             <tag> 筆記 </tag>
+            
+            <tag> 架站 </tag>
             
             <tag> Hexo-Theme-Butterfly </tag>
             
@@ -487,11 +512,11 @@
             
             <tag> Hexo </tag>
             
-            <tag> 架站 </tag>
-            
             <tag> Github </tag>
             
             <tag> 筆記 </tag>
+            
+            <tag> 架站 </tag>
             
             <tag> Hexo-Theme-Butterfly </tag>
             

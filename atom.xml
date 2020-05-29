@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ouoholly.github.io/"/>
-  <updated>2020-05-15T13:35:47.547Z</updated>
+  <updated>2020-05-29T09:50:06.287Z</updated>
   <id>https://ouoholly.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>令 Windows 10 視覺上更快更流暢，關閉動畫效果設定</title>
+    <link href="https://ouoholly.github.io/post/win10-turnoff-animation-effect-setting/"/>
+    <id>https://ouoholly.github.io/post/win10-turnoff-animation-effect-setting/</id>
+    <published>2020-05-29T09:37:00.000Z</published>
+    <updated>2020-05-29T09:50:06.287Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1-Go-to-Settings&quot;&gt;&lt;a href=&quot;#1-Go-to-Settings&quot; class=&quot;headerlink&quot; title=&quot;1. Go to Settings&quot;&gt;&lt;/a&gt;1. Go to Settings&lt;/h1&gt;&lt;p&gt;click &lt;code&gt;Ease of Access&lt;/code&gt;&lt;br&gt;&lt;img alt=&quot;step 1&quot; data-src=&quot;https://i.imgur.com/uWIWj1Q.jpg&quot; src=&quot;/img/loading.svg&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="筆記" scheme="https://ouoholly.github.io/categories/%E7%AD%86%E8%A8%98/"/>
+    
+    
+      <category term="windows 10" scheme="https://ouoholly.github.io/tags/windows-10/"/>
+    
+  </entry>
   
   <entry>
     <title>【個人用途記錄】Python 爬蟲 - 抓取及解析 HTML 網頁資料</title>
@@ -286,36 +313,6 @@
       <category term="javascript" scheme="https://ouoholly.github.io/tags/javascript/"/>
     
       <category term="html" scheme="https://ouoholly.github.io/tags/html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Terminal Command Line / CMD / Linux 常用指令</title>
-    <link href="https://ouoholly.github.io/post/cmd-terminal-command/"/>
-    <id>https://ouoholly.github.io/post/cmd-terminal-command/</id>
-    <published>2020-02-25T14:00:00.000Z</published>
-    <updated>2020-02-28T06:52:51.386Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;clear&quot;&gt;&lt;a href=&quot;#clear&quot; class=&quot;headerlink&quot; title=&quot;clear&quot;&gt;&lt;/a&gt;clear&lt;/h1&gt;&lt;p&gt;&lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;L&lt;/code&gt; OR &lt;code&gt;clear&lt;/code&gt; clear the terminal screen&lt;/p&gt;
-&lt;h1 id=&quot;tab&quot;&gt;&lt;a href=&quot;#tab&quot; class=&quot;headerlink&quot; title=&quot;tab&quot;&gt;&lt;/a&gt;tab&lt;/h1&gt;&lt;p&gt;click
-        
-      
-    
-    </summary>
-    
-    
-      <category term="筆記" scheme="https://ouoholly.github.io/categories/%E7%AD%86%E8%A8%98/"/>
-    
-    
-      <category term="筆記" scheme="https://ouoholly.github.io/tags/%E7%AD%86%E8%A8%98/"/>
-    
-      <category term="CMD-command" scheme="https://ouoholly.github.io/tags/CMD-command/"/>
     
   </entry>
   
