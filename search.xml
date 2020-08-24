@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>【Python 爬蟲】抓取 Google 搜尋結果的連結</title>
+      <link href="/post/python-web-crawl-google-search-result-urls/"/>
+      <url>/post/python-web-crawl-google-search-result-urls/</url>
+      
+        <content type="html"><![CDATA[<hr><p>記錄一下批量抓取 Google 搜尋結果裡的連結的方法。</p><hr><p>如果還沒有安裝以下，要先下載安裝：</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">cmd</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">pip install beautifulsoup4</span><br><span class="line">pip install google</span><br></pre></td></tr></table></figure></div><h1 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h1><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">python</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> googlesearch <span class="keyword">import</span> search</span><br><span class="line"></span><br><span class="line">query = <span class="string">"cambridge"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> j <span class="keyword">in</span> search(query, stop=<span class="number">5</span>, pause=<span class="number">2.0</span>): </span><br><span class="line">print(j)</span><br></pre></td></tr></table></figure></div><h1 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h1><p><img alt="result" data-src="https://i.imgur.com/vo8SjlT.png" src="/img/loading.svg" class="lazyload"></p><h1 id="解釋"><a href="#解釋" class="headerlink" title="解釋"></a>解釋</h1><ul><li><code>query</code> : keywords for searching</li><li><code>stop</code> : Last result to retrieve. Use <code>None</code> to keep searching forever.</li><li><code>pause</code> : Lapse to wait between HTTP requests. Lapse too short may cause Google to block your IP. Keeping significant lapse will make your program slow but its safe and better option.</li></ul><hr><h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul><li><a href="https://www.geeksforgeeks.org/performing-google-search-using-python-code/" target="_blank" rel="noopener">Performing Google Search using Python code - GeeksforGeeks</a></li></ul><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 數據處理 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> 爬蟲 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>令 Windows 10 視覺上更快更流暢，關閉動畫效果設定</title>
       <link href="/post/win10-turnoff-animation-effect-setting/"/>
       <url>/post/win10-turnoff-animation-effect-setting/</url>
@@ -13,7 +40,7 @@
       
       <categories>
           
-          <category> 筆記 </category>
+          <category> 辦公小技巧 </category>
           
       </categories>
       
@@ -38,7 +65,7 @@
       
       <categories>
           
-          <category> 筆記 </category>
+          <category> 數據處理 </category>
           
       </categories>
       
@@ -65,7 +92,7 @@
       
       <categories>
           
-          <category> 筆記 </category>
+          <category> 數據處理 </category>
           
       </categories>
       
@@ -188,7 +215,7 @@
       
       <categories>
           
-          <category> 寫網頁 </category>
+          <category> 編寫網頁 </category>
           
       </categories>
       
@@ -242,7 +269,7 @@
       
       <categories>
           
-          <category> 寫網頁 </category>
+          <category> 編寫網頁 </category>
           
       </categories>
       
