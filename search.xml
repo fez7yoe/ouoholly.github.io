@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>在 Hexo Butterfly 主題加上 LikeCoin Button</title>
+      <link href="/post/add-likecoin-btn-to-hexo-butterfly/"/>
+      <url>/post/add-likecoin-btn-to-hexo-butterfly/</url>
+      
+        <content type="html"><![CDATA[<p><img alt="LikeCoin on Hexo Butterfly theme preivew" data-src="https://i.imgur.com/QiD37CQ.png" src="/img/loading.svg" class="lazyload"></p><p>網上找到的 LikeCoin Hexo教學都是用 ejs ，但 Butterfly 主題是用 pug ，所以這裡出一篇文章以 Hexo Butterfly 主題為例，分享如何在 pug 中添加 LikeCoin 讚賞鏈，希望對有需要的人有幫助。</p><h1 id="1-註冊"><a href="#1-註冊" class="headerlink" title="1. 註冊"></a>1. 註冊</h1><p>首先，當然是註冊啦。<br>歡迎各位使用我的邀請連結去進行註冊~  <a href="https://like.co/ref/ouoholly" target="_blank" rel="noopener">https://like.co/ref/ouoholly</a></p><h1 id="2-修改-config-yml"><a href="#2-修改-config-yml" class="headerlink" title="2. 修改 _config.yml"></a>2. 修改 _config.yml</h1><p>在 <code>..\themes\Butterfly\_config.yml</code> 裡，添加以下代碼：</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">yml</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># LikeCoin Button</span></span><br><span class="line"><span class="attr">liker:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><h1 id="3-修改-post-pug"><a href="#3-修改-post-pug" class="headerlink" title="3. 修改 post.pug"></a>3. 修改 post.pug</h1><p>在 <code>..\themes\Butterfly\layout</code> 裡，<br>由於我是想把 LikeCoin button 放在每篇文章的末端及版權字句的中間，所以在 <code>if (theme.post_copyright &amp;&amp; theme.post_copyright.enable &amp;&amp; page.copyright != false)</code> 的上方，添加以下代碼：</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">Code</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if theme.liker.enable</span><br><span class="line">  include includes&#x2F;liker.pug</span><br></pre></td></tr></table></figure></div><h1 id="4-創建-liker-pug"><a href="#4-創建-liker-pug" class="headerlink" title="4. 創建 liker.pug"></a>4. 創建 liker.pug</h1><p>在 <code>..\themes\Butterfly\layout\includes</code> 裡，創建一個名為 <code>liker.pug</code> 的檔案，以下為檔案內容。<br>把src連結中 embed 後的改為自己的 LikerID。</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">Code</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">div</span><br><span class="line">  p 如果您喜歡我的文章，歡迎幫我在下面按5下讚！感謝您的鼓勵和支持！</span><br><span class="line">  script(type&#x3D;&#39;text&#x2F;javascript&#39;).</span><br><span class="line">    document.write(</span><br><span class="line">    &quot;&lt;iframe scrolling&#x3D;&#39;no&#39; frameborder&#x3D;&#39;0&#39; sandbox&#x3D;&#39;allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-storage-access-by-user-activation&#39; style&#x3D;&#39;height: 212px; width: 100%;&#39; src&#x3D;&#39;https:&#x2F;&#x2F;button.like.co&#x2F;in&#x2F;embed&#x2F;ouoholly&#x2F;button?referrer&#x3D;&quot; +</span><br><span class="line">    encodeURIComponent(location.href.split(&quot;?&quot;)[0].split(&quot;#&quot;)[0]) + &quot;&#39;&gt;&lt;&#x2F;iframe&gt;&quot;);</span><br></pre></td></tr></table></figure></div><p><font color="#ff0000"><strong>這樣就完成啦！</strong></font> <img alt="表符-DONE" data-src="https://emos.plurk.com/fcd34ce05c37536b808496e9da74c8b6_w40_h47.gif" src="/img/loading.svg" class="lazyload"></p><hr><h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul><li><a href="https://blog.mykeyvans.science/posts/add-likebutton-for-hexo.html" target="_blank" rel="noopener">藍圖重生（一）：給 Hexo 文章 加上 LikeCoin 的贊賞鍵</a></li><li><a href="https://docs.like.co/v/zh/user-guide/content-creators/self-host/hexo-next" target="_blank" rel="noopener">LikeCoin Docs - 如何在 Hexo 開發環境的文章中加入讚賞鍵</a></li><li><a href="https://stationery.raypuppy.com/2019/01/08/2755/" target="_blank" rel="noopener">LikeCoin如何放在Blogger或其他地方 - 寶石般的文具箱</a></li></ul><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 架站記錄 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Hexo-Theme-Butterfly </tag>
+            
+            <tag> 架站 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【Python 爬蟲】抓取 Google 搜尋結果的連結</title>
       <link href="/post/python-web-crawl-google-search-result-urls/"/>
       <url>/post/python-web-crawl-google-search-result-urls/</url>
@@ -249,9 +278,9 @@
             
             <tag> Hexo </tag>
             
-            <tag> 架站 </tag>
-            
             <tag> Hexo-Theme-Butterfly </tag>
+            
+            <tag> 架站 </tag>
             
         </tags>
       
@@ -508,11 +537,11 @@
             
             <tag> Hexo </tag>
             
+            <tag> Hexo-Theme-Butterfly </tag>
+            
             <tag> 架站 </tag>
             
             <tag> 筆記 </tag>
-            
-            <tag> Hexo-Theme-Butterfly </tag>
             
         </tags>
       
@@ -539,13 +568,13 @@
             
             <tag> Hexo </tag>
             
-            <tag> 架站 </tag>
+            <tag> Hexo-Theme-Butterfly </tag>
             
             <tag> Github </tag>
             
-            <tag> 筆記 </tag>
+            <tag> 架站 </tag>
             
-            <tag> Hexo-Theme-Butterfly </tag>
+            <tag> 筆記 </tag>
             
         </tags>
       

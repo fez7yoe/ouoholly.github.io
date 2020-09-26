@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ouoholly.github.io/"/>
-  <updated>2020-08-24T14:39:15.769Z</updated>
+  <updated>2020-09-26T16:13:09.194Z</updated>
   <id>https://ouoholly.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在 Hexo Butterfly 主題加上 LikeCoin Button</title>
+    <link href="https://ouoholly.github.io/post/add-likecoin-btn-to-hexo-butterfly/"/>
+    <id>https://ouoholly.github.io/post/add-likecoin-btn-to-hexo-butterfly/</id>
+    <published>2020-09-26T16:13:00.000Z</published>
+    <updated>2020-09-26T16:13:09.194Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img alt=&quot;LikeCoin on Hexo Butterfly theme preivew&quot; data-src=&quot;https://i.imgur.com/QiD37CQ.png&quot; src=&quot;/img/loading.svg&quot; class=&quot;lazyload&quot;&gt;&lt;/p&gt;
+&lt;p&gt;網上找到的 LikeCoin Hexo教學都是用 ejs ，但 Butterfly 主題是用 pug ，所以這裡出一篇文章以 Hexo Butterfly 主題為例，分享如何在 pug 中添加
+        
+      
+    
+    </summary>
+    
+    
+      <category term="架站記錄" scheme="https://ouoholly.github.io/categories/%E6%9E%B6%E7%AB%99%E8%A8%98%E9%8C%84/"/>
+    
+    
+      <category term="Hexo" scheme="https://ouoholly.github.io/tags/Hexo/"/>
+    
+      <category term="Hexo-Theme-Butterfly" scheme="https://ouoholly.github.io/tags/Hexo-Theme-Butterfly/"/>
+    
+      <category term="架站" scheme="https://ouoholly.github.io/tags/%E6%9E%B6%E7%AB%99/"/>
+    
+  </entry>
   
   <entry>
     <title>【Python 爬蟲】抓取 Google 搜尋結果的連結</title>
@@ -281,38 +313,6 @@
     
     
       <category term="html" scheme="https://ouoholly.github.io/tags/html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo Butterfly 主題：添加文章日曆插件</title>
-    <link href="https://ouoholly.github.io/post/butterfly-add-hexo-generator-calendar/"/>
-    <id>https://ouoholly.github.io/post/butterfly-add-hexo-generator-calendar/</id>
-    <published>2020-02-28T10:05:00.000Z</published>
-    <updated>2020-03-18T04:48:33.162Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;成功在 Hexo Butterfly 主題的側欄添加文章日曆了！ &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;感謝這位 HCLonely 大大的教學文檔!&lt;/strong&gt; &lt;img alt=&quot;表符-比心&quot; data-src=&quot;https://emos.plurk.com/067d3ef4b9bccca895784802f000cfa6_w20_h20.gif&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="架站記錄" scheme="https://ouoholly.github.io/categories/%E6%9E%B6%E7%AB%99%E8%A8%98%E9%8C%84/"/>
-    
-    
-      <category term="Hexo" scheme="https://ouoholly.github.io/tags/Hexo/"/>
-    
-      <category term="架站" scheme="https://ouoholly.github.io/tags/%E6%9E%B6%E7%AB%99/"/>
-    
-      <category term="Hexo-Theme-Butterfly" scheme="https://ouoholly.github.io/tags/Hexo-Theme-Butterfly/"/>
     
   </entry>
   
