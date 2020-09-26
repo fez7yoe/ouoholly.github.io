@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>在 Hexo Butterfly 主題加上隨機文章功能</title>
+      <link href="/post/add-random-article-function-hexo-butterfly/"/>
+      <url>/post/add-random-article-function-hexo-butterfly/</url>
+      
+        <content type="html"><![CDATA[<hr><p>感謝 <a href="https://cndrew.cn/2019/10/19/plugin/" target="_blank" rel="noopener">Uncle_drew</a> 製作出Hexo隨機文章功能插件 <a href="https://github.com/Drew233/hexo-generator-random" target="_blank" rel="noopener">hexo-generator-random</a> <img alt="表符-比心" data-src="https://emos.plurk.com/067d3ef4b9bccca895784802f000cfa6_w20_h20.gif" src="/img/loading.svg" class="lazyload"><br>這邊記錄一下安裝過程。</p><hr><h1 id="1-安裝-object-assign"><a href="#1-安裝-object-assign" class="headerlink" title="1. 安裝 object-assign"></a>1. 安裝 object-assign</h1><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">cmd</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm install object-assign</span><br></pre></td></tr></table></figure></div><h1 id="2-下載並添加-hexo-generator-random"><a href="#2-下載並添加-hexo-generator-random" class="headerlink" title="2. 下載並添加 hexo-generator-random"></a>2. 下載並添加 hexo-generator-random</h1><p>下載 <a href="https://github.com/Drew233/hexo-generator-random" target="_blank" rel="noopener">hexo-generator-random</a> 倉庫的內容，然後把它放進 <code>../blog/node_modules</code> 文件夾中。</p><h1 id="3-修改-package-json"><a href="#3-修改-package-json" class="headerlink" title="3. 修改 package.json"></a>3. 修改 package.json</h1><p>在 <code>../blog/package.json</code> 這個檔案中，添加以下：</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang"></div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight"><table><tr><td class="code"><pre><span class="line">"object-assign": "^4.1.1",</span><br><span class="line">"hexo-generator-random": "^1.0.0"</span><br></pre></td></tr></table></figure></div><p>以下是我 <code>package.json</code> 檔案中的完整內容，給參考。</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">json</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"name"</span>: <span class="string">"hexo-site"</span>,</span><br><span class="line">  <span class="attr">"version"</span>: <span class="string">"0.0.0"</span>,</span><br><span class="line">  <span class="attr">"private"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"scripts"</span>: &#123;</span><br><span class="line">    <span class="attr">"build"</span>: <span class="string">"hexo generate"</span>,</span><br><span class="line">    <span class="attr">"clean"</span>: <span class="string">"hexo clean"</span>,</span><br><span class="line">    <span class="attr">"deploy"</span>: <span class="string">"hexo deploy"</span>,</span><br><span class="line">    <span class="attr">"server"</span>: <span class="string">"hexo server"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"hexo"</span>: &#123;</span><br><span class="line">    <span class="attr">"version"</span>: <span class="string">"4.2.0"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"dependencies"</span>: &#123;</span><br><span class="line">    <span class="attr">"cheerio"</span>: <span class="string">"^0.22.0"</span>,</span><br><span class="line">    <span class="attr">"hexo"</span>: <span class="string">"^4.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-blog-encrypt"</span>: <span class="string">"^3.0.12"</span>,</span><br><span class="line">    <span class="attr">"hexo-deployer-git"</span>: <span class="string">"^2.1.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-archive"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-calendar"</span>: <span class="string">"git://github.com/howiefh/hexo-generator-calendar.git"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-category"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-feed"</span>: <span class="string">"^2.2.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-index"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-search"</span>: <span class="string">"^2.4.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-tag"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-hide-posts"</span>: <span class="string">"^0.1.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-ejs"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-jade"</span>: <span class="string">"^0.5.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-marked"</span>: <span class="string">"^2.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-pug"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-renderer-stylus"</span>: <span class="string">"^1.1.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-server"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="attr">"hexo-wordcount"</span>: <span class="string">"^6.0.1"</span>,</span><br><span class="line">    <span class="attr">"object-assign"</span>: <span class="string">"^4.1.1"</span>,</span><br><span class="line">    <span class="attr">"hexo-generator-random"</span>: <span class="string">"^1.0.0"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div><h1 id="4-檢查"><a href="#4-檢查" class="headerlink" title="4. 檢查"></a>4. 檢查</h1><p>到 <code>../blog/public</code> 看，會看見一個名為 <code>random.html</code> 的檔案已自動生成。<br>開啓這個 <code>random.html</code> 檔，隨機會到了其中一篇文章。成功。</p><h1 id="5-把隨機功能添加到-menu"><a href="#5-把隨機功能添加到-menu" class="headerlink" title="5. 把隨機功能添加到 menu"></a>5. 把隨機功能添加到 menu</h1><p>在 <code>..\themes\Butterfly\_config.yml</code>，在 menu 添加隨機功能。</p><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">yml</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">隨機:</span> <span class="string">/random.html/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-question</span></span><br></pre></td></tr></table></figure></div><p>完成！</p><hr><h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul><li><a href="https://cndrew.cn/2019/10/19/plugin/" target="_blank" rel="noopener">hexo-generator-random | Hexo插件 | Uncle_drew</a></li><li><a href="https://github.com/Drew233/hexo-generator-random" target="_blank" rel="noopener">GitHub - Drew233/hexo-generator-random</a></li></ul><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 架站記錄 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Hexo-Theme-Butterfly </tag>
+            
+            <tag> 架站 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在 Hexo Butterfly 主題加上 LikeCoin Button</title>
       <link href="/post/add-likecoin-btn-to-hexo-butterfly/"/>
       <url>/post/add-likecoin-btn-to-hexo-butterfly/</url>
@@ -537,11 +566,11 @@
             
             <tag> Hexo </tag>
             
+            <tag> 筆記 </tag>
+            
             <tag> Hexo-Theme-Butterfly </tag>
             
             <tag> 架站 </tag>
-            
-            <tag> 筆記 </tag>
             
         </tags>
       
@@ -568,13 +597,13 @@
             
             <tag> Hexo </tag>
             
-            <tag> Hexo-Theme-Butterfly </tag>
-            
             <tag> Github </tag>
             
-            <tag> 架站 </tag>
-            
             <tag> 筆記 </tag>
+            
+            <tag> Hexo-Theme-Butterfly </tag>
+            
+            <tag> 架站 </tag>
             
         </tags>
       
